@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Sexta-feira</title>
+<meta name="description" content="Quais dados do Google a Sexta-feira acessa, para onde eles vão, quanto tempo ficam guardados e como remover o acesso.">
+<style>
+  :root { --fundo:#ffffff; --texto:#1c1f24; --suave:#5a6270; --linha:#d9dde3; --destaque:#b3263e; }
+  @media (prefers-color-scheme: dark) { :root { --fundo:#16181d; --texto:#e8eaee; --suave:#9aa3b2; --linha:#2d323b; --destaque:#ff6b80; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--fundo); color:var(--texto); font:17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2.2rem 0 .5rem; }
+  p.sub { color: var(--suave); margin: 0 0 1.5rem; }
+  a { color: var(--destaque); }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; margin: .5rem 0 1rem; }
+  th, td { text-align: left; vertical-align: top; padding: .5rem .6rem; border-bottom: 1px solid var(--linha); }
+  th { color: var(--suave); font-weight: 600; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--linha); color: var(--suave); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de Privacidade</h1>
+  <p class="sub">Sexta-feira — última atualização: 11/11/2026. <a href="index.html">Voltar ao início</a></p>
+
+  <p>A Sexta-feira é um assistente pessoal que roda no computador do próprio usuário. Esta política explica quais dados da conta Google
+  ela acessa quando o usuário a conecta, o que faz com eles e como o acesso pode ser removido.</p>
+
+  <h2>1. Quais dados do Google são acessados</h2>
+  <p>Apenas as permissões que o usuário autoriza na tela de consentimento do Google, e somente para atender a um pedido dele:</p>
+  <table>
+    <tr><th>Permissão</th><th>Para que serve</th></tr>
+    <tr><td>Google Agenda (eventos)</td><td>Criar, listar e cancelar compromissos.</td></tr>
+    <tr><td>Google Drive — arquivos criados pelo app</td><td>Criar e acrescentar texto a documentos e planilhas que a própria Sexta-feira criou.</td></tr>
+    <tr><td>Google Drive — somente leitura</td><td>Buscar e ler arquivos que o usuário pede para ler. Nada é editado, movido, compartilhado ou apagado.</td></tr>
+    <tr><td>Google Tarefas</td><td>Criar, consultar, concluir e apagar tarefas.</td></tr>
+    <tr><td>Gmail — leitura</td><td>Ler e resumir mensagens que o usuário pede para ler.</td></tr>
+    <tr><td>Gmail — envio</td><td>Enviar uma mensagem escrita pelo usuário. Cada envio exige uma verificação adicional do usuário.</td></tr>
+    <tr><td>Contatos — somente leitura</td><td>Consultar nomes e endereços de contatos quando o usuário pede.</td></tr>
+  </table>
+
+  <h2>2. Como os dados são usados</h2>
+  <p>Os dados do Google são usados <strong>somente para executar o pedido que o usuário acabou de fazer</strong> à assistente, como "o que tenho
+  na agenda amanhã?" ou "resume este e-mail". Não são usados para publicidade, perfilamento, venda ou qualquer outra finalidade.</p>
+
+  <h2>3. Para onde os dados vão</h2>
+  <ul>
+    <li><strong>Neste computador:</strong> o token de acesso é guardado em arquivo no próprio computador, protegido pelo Windows (DPAPI), e só abre
+    na conta e no PC do usuário. O histórico das conversas, que pode incluir o resumo do que a assistente leu, também fica em um banco de dados local,
+    que o usuário pode manter cifrado.</li>
+    <li><strong>Provedor de inteligência artificial:</strong> para entender e responder ao pedido, o texto necessário (por exemplo, o conteúdo de
+    um e-mail que o usuário pediu para resumir) é enviado ao provedor de IA que o usuário configurou — Anthropic (Claude) ou DeepSeek. Antes
+    do envio, o conteúdo de origem externa passa por um filtro local que mascara dados sensíveis comuns (chaves de API, senhas, CPF, números de
+    cartão). Esse filtro reduz o risco, mas não promete eliminá-lo.</li>
+    <li><strong>Terceiros:</strong> os dados do Google não são vendidos, compartilhados nem transferidos a ninguém além do que está descrito
+    acima, exceto se exigido por lei.</li>
+  </ul>
+
+  <h2>4. Uso limitado</h2>
+  <p>O uso e a transferência de informações recebidas das APIs do Google por este aplicativo seguem a
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>,
+  incluindo os requisitos de Uso Limitado. Não há leitura dos dados por pessoas, a não ser que o próprio usuário as veja na tela do seu computador.</p>
+
+  <h2>5. Quanto tempo ficam guardados</h2>
+  <p>O token fica guardado até o usuário remover o acesso (item 6). O histórico local fica no computador do usuário até ele apagá-lo.
+  O desenvolvedor não mantém servidor nem banco de dados próprios: não recebe nem armazena os dados do Google de ninguém.</p>
+
+  <h2>6. Como remover o acesso</h2>
+  <ul>
+    <li>Revogue a permissão em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, escolhendo "Sexta-feira" e
+    "Remover acesso". Isso invalida o token imediatamente.</li>
+    <li>Apague o arquivo <code>dados/google_token.bin</code> da pasta do programa para remover o token do computador.</li>
+  </ul>
+
+  <h2>7. Alterações e contato</h2>
+  <p>Se esta política mudar, a data no topo será atualizada. Dúvidas ou pedidos sobre privacidade:
+  <a href="mailto:rodrigoalisson33@gmail.com">rodrigoalisson33@gmail.com</a>.</p>
+
+  <footer>Sexta-feira — projeto pessoal mantido por Rodrigo Santana. <a href="termos.html">Termos de Serviço</a></footer>
+</main>
+</body>
+</html>
